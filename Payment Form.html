@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form> action="">
+        <h1 class="main_heading">Payment Form</h1>
+        <p>Required Fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name:*<input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+        <p>
+            Male:<input type="radio" name="gender" id="Male" required </p>
+        <p>
+            Female:<input type="radio" name="gender" id="Female" required 
+        </p>
+    </fieldset>
+    <p>Address:<textarea name="address" id="address" cols="100" rows="7" ></textarea> </p>
+    <p>Email:*<input type="text" name="name" id="email"required</p>
+    <p>Pincode:*<input type="number" id="pincode" required</p>
+    <h2>Payment Information</h2>
+    <p>Card Type:*
+        <select name="card_type" id="card_type" required>
+            <option value="">-Select a Card Type-</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Rupay">Rupay</option>
+        </select>
+    </p>
+    <p>Card Number*<input type="number" name="number" id="number" required</p>
+    <p>CVV*<input type="password" name="CVV" id="CVV" required</p>
+    <p>
+      Expiration Date*:<input type="date" name="expiry date" id="exp date" required>
+    </p>
+    <p>
+    <input type="Submit" value="Pay now" </p>
+    
+
+
+    </form>
+</div>
+
+    
+</body>
+
+<script>
+    let firstName ="Sashanka"
+    let LastName="Deka"
+    const price=99;
+    var courseName="JAVA"
+    var cardNumber="123456789";
+    var isPaid=true;
+    var modeOfPayment;
+    modeOfPayment=prompt("Mode of Payment?");
+    alert(firstName+"successfully bought"+courseName + "using"+modeOfPayment);
+</script>
+</html>
